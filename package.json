@@ -47,7 +47,7 @@
     "simplessy": "^1.0.2"
   },
   "dependencies": {
-    "browserify": "^12.0.1",
+    "browserify": "^13.0.0",
     "file-entry-cache": "^1.2.0",
     "flat-cache": "^1.2.1",
     "hash-string": "^1.0.0",
