@@ -116,7 +116,7 @@ module.exports = function ( browserifyOpts, opts, argv ) {
   }
 
   if ( opts.watch ) {
-    b = watchify( b );
+    b = watchify( b, typeof opts.watch === 'object' ? opts.watch : undefined );
   }
 
   collect();
