@@ -129,7 +129,7 @@ module.exports = function ( browserifyOpts, opts, argv ) {
     try {
       stream = oldBundle.apply( b, arguments );
       stream.on( 'error', function ( err ) {
-        console.error( err ); // eslint-disable-line
+        // console.error( err ); // eslint-disable-line
       } );
       stream.on( 'end', function () {
         setTimeout( function () {
@@ -142,7 +142,7 @@ module.exports = function ( browserifyOpts, opts, argv ) {
         b.emit( 'bundle:done', end );
       } );
     } catch (ex) {
-      console.error( ex ); // eslint-disable-line
+      // console.error( ex ); // eslint-disable-line
     }
 
     return stream;
